@@ -14,7 +14,7 @@ export const ni_dark_blue = '#001eaa'
 export const ni_dark_green = '#0a6e78'
 
 export const theme = {
-    googleFont: 'https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Roboto+Mono',
+    googleFont: 'https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab:400,700|Roboto:400,700&display=swap',
     fonts: {
         body: 'Roboto'
     },
