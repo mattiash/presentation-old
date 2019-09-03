@@ -1,8 +1,11 @@
 import React from 'react'
-import { ni_green, ni_dark_green } from './theme'
+import { ni_blue, ni_green, ni_dark_green } from './theme'
 
-export default ({ children }) => (
-    <div
+export default ({ children }) => {
+    const screen = window.location.pathname !== '/print'
+
+    if(screen) {
+    return <div
         style={{
             width: '100%',
             height: '100%',
@@ -37,4 +40,17 @@ export default ({ children }) => (
 
         </div>
     </div>
-)
+    }
+    else {
+        return <div style={{
+            width: '100%',
+            paddingLeft: '1em',
+        }}>
+            <h1 style={{
+                fontFamily: 'Roboto Slab',
+                wordSpacing: '-10%',
+                color: ni_blue,
+            }}>{children}</h1>
+        </div>
+    }
+}
