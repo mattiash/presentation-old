@@ -22,18 +22,28 @@ export const theme = {
         h1: {
             fontFamily: 'Roboto Slab',
             wordSpacing: '-10%',
-            weight: 'bold',
             color: ni_blue,
         },
         h2: {
-            fontFamily: 'Roboto',
-            weight: 'bold',
-            lineHeight: '110%'
+            marginTop: '0.3em',
+            fontFamily: 'Roboto Slab',
+            fontWeight: 'bold',
+            lineHeight: '110%',
+            color: ni_blue,
+            position: 'absolute',
+            top: 0,
+
         },
         blockquote: {
             fontFamily: 'Roboto Mono',
             lineHeight: '120%',
             fontStyle: 'italic',
         },
+        Slide: {
+            background: `linear-gradient(90deg, ${ni_blue} 50%, ${ni_green})`,
+            backgroundSize: '100% 10px',
+            backgroundRepeat: 'no-repeat',
+            paddingTop: '2.2em'
+        }
     }
 }
