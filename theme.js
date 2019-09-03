@@ -39,11 +39,16 @@ export const theme = {
             lineHeight: '120%',
             fontStyle: 'italic',
         },
+        li: {
+            lineHeight: '150%'
+        },
         Slide: {
             background: `linear-gradient(90deg, ${ni_blue} 50%, ${ni_green})`,
             backgroundSize: '100% 10px',
             backgroundRepeat: 'no-repeat',
-            paddingTop: '2.2em'
+            paddingTop: '2.2em',
+            paddingLeft: '1em',
+            paddingRight: '1em', 
         }
     }
 }
