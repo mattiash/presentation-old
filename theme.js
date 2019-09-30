@@ -25,7 +25,7 @@ export const theme = {
             color: ni_blue,
         },
         h2: {
-            marginTop: '0.3em',
+            marginTop: '0.5em',
             fontFamily: 'Roboto Slab',
             fontWeight: 'bold',
             lineHeight: '110%',
