@@ -43,8 +43,10 @@ export const theme = {
             lineHeight: '150%'
         },
         Slide: {
-            background: `linear-gradient(90deg, ${ni_blue} 50%, ${ni_green})`,
-            backgroundSize: '100% 10px',
+            backgroundImage: `linear-gradient(90deg, ${ni_blue} 50%, ${ni_green}), linear-gradient(to right, RGB(255,255,255), RGB(255,255,255))`,
+            backgroundPosition: '0 0, 0, 10px',
+            backgroundSize: '100% 10px, 100% 100%',
+
             backgroundRepeat: 'no-repeat',
             paddingTop: '2.2em',
             paddingLeft: '1em',
