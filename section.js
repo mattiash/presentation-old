@@ -1,7 +1,20 @@
 import React from 'react'
-import { ni_blue, ni_green, ni_dark_green } from './theme'
+import { ni_blue, ni_green, ni_dark_green, ni_dark_blue, ni_light_blue } from './theme'
 
-export default ({ children }) => {
+const colors = {
+    'green': {
+        background: ni_green,
+        text: ni_dark_green
+    },
+    'blue': {
+        background: ni_light_blue,
+        text: ni_dark_blue
+    },
+}
+
+export default ({ children, color }) => {
+    color = color || 'green'
+
     const screen = window.location.pathname !== '/print'
 
     if(screen) {
@@ -9,7 +22,7 @@ export default ({ children }) => {
         style={{
             width: '100%',
             height: '100%',
-            backgroundColor: ni_green,
+            backgroundColor: colors[color].background,
             backgroundSize: '100% 100%',
             paddingLeft: '1em',
             color: 'white',
@@ -31,7 +44,7 @@ export default ({ children }) => {
                     fontFamily: 'Roboto Slab',
                     wordSpacing: '-10%',
                     weight: 'bold',
-                    color: ni_dark_green,
+                    color: colors[color].text,
                     fontSize: '3em',
                     marginTop: 0,
                     lineHeight: "100%"
